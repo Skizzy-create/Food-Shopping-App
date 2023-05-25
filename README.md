@@ -1,6 +1,6 @@
 # Food Shopping App
 
-This is a small app, still under development. Currently, only a few features such as the frontend and the sliding options are working.
+This is a small app made in dart-flutter, still under development. Currently, only a few features such as the frontend and the sliding options are working.
 
 <br>
 
