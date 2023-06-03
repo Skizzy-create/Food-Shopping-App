@@ -58,8 +58,7 @@ class DonutTile extends StatelessWidget {
             ),
 
             // donut flavour
-            Text(
-              donutFlavour,
+            Text(donutFlavour,
               style: const TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 16,

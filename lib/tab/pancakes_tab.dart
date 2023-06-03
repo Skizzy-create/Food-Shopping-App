@@ -24,7 +24,7 @@ class PancakeTab extends StatelessWidget {
       itemBuilder: (BuildContext context, int index) {
       return PancakeTile(
         pancakeFlavour: pancakeOnSale[index][0],
-        panckaePrice: pancakeOnSale[index][1],
+        pancakePrice: pancakeOnSale[index][1],
         pancakeColour: pancakeOnSale[index][2],
         imageName: pancakeOnSale[index][3],
           );

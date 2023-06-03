@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 
 class PancakeTile extends StatelessWidget{
   final String pancakeFlavour;
-  final String panckaePrice;
+  final String pancakePrice;
   final pancakeColour;
   final String imageName;
   
@@ -11,7 +10,7 @@ class PancakeTile extends StatelessWidget{
   
   const PancakeTile({Key? key, 
     required this.pancakeFlavour, 
-    required this.panckaePrice, 
+    required this.pancakePrice,
     required this.pancakeColour, 
     required this.imageName,
   }) : super(key: key);
@@ -41,7 +40,7 @@ class PancakeTile extends StatelessWidget{
                   ),
                   padding: const EdgeInsets.all(12),
                   child: Text(
-                    '\$$panckaePrice',
+                    '\$$pancakePrice',
                     style: TextStyle(
                       color: pancakeColour,
                       fontWeight: FontWeight.bold,
@@ -59,10 +58,36 @@ class PancakeTile extends StatelessWidget{
             ),
 
             //Pancakes flavour
-            Text(pancakeFlavour,style: const TextStyle(
+            Text(pancakeFlavour,
+              style: const TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 16,
+            ),
+            ),
+            const SizedBox(height: 4,),
+            Text(
+              "The Belgian Waffle Co.", style: TextStyle(color: Colors.grey[600]),
+            ),
 
-            ),
-            ),
+            // Like icon + add button
+            Padding(
+              padding: const EdgeInsets.all(12.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  // like icon
+                  Icon(
+                    Icons.favorite,
+                    color: Colors.pink[400],
+                  ),
+                  // Plus icon
+                  Icon(
+                    Icons.add,
+                    color: Colors.grey[800],
+                  )
+                ],
+              ),
+            )
           ],
         ),
       ),
