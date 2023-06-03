@@ -6,16 +6,17 @@ class PancakeTab extends StatelessWidget {
   // List Pancakes On Sale
   List pancakeOnSale = [
     // [pancakeFlavour, pancakePrice, pancakeColour, imageName]
-    ["Classic", "49", Colors.blue, "Assets//images//Pancakes//Regular_pancakes.png"],
-    ["Peach", "59", Colors.red, "Assets//images//Pancakes//Regular_pancakes.png"],
-    ["Strawberry", "69", Colors.pink, "Assets//images//Pancakes//Regular_pancakes.png"],
-    ["Blueberry", "79", Colors.purple, "Assets//images//Pancakes//Blueberry_pancakes.png"],
+    ["Classic", "49", Colors.blue, "Assets/images/Pancakes/Regular_pancakes.png"],
+    ["Peach", "59", Colors.red, "Assets/images/Pancakes/Regular_pancakes.png"],
+    ["Strawberry", "69", Colors.pink, "Assets/images/Pancakes/Regular_pancakes.png"],
+    ["Blueberry", "79", Colors.purple, "Assets/images/Pancakes/Blueberry_pancakes.png"],
   ];
 
   @override
   Widget build(BuildContext context) {
     return GridView.builder(
       itemCount: pancakeOnSale.length,
+      padding: const EdgeInsets.all(12),
       gridDelegate:
       const SliverGridDelegateWithFixedCrossAxisCount(
         crossAxisCount: 2,

@@ -5,13 +5,13 @@ class PancakeTile extends StatelessWidget{
   final String pancakePrice;
   final pancakeColour;
   final String imageName;
-  
+
   final double bordeRadius = 12;
-  
-  const PancakeTile({Key? key, 
-    required this.pancakeFlavour, 
+
+  const PancakeTile({Key? key,
+    required this.pancakeFlavour,
     required this.pancakePrice,
-    required this.pancakeColour, 
+    required this.pancakeColour,
     required this.imageName,
   }) : super(key: key);
 
@@ -42,7 +42,7 @@ class PancakeTile extends StatelessWidget{
                   child: Text(
                     '\$$pancakePrice',
                     style: TextStyle(
-                      color: pancakeColour,
+                      color: pancakeColour[800],
                       fontWeight: FontWeight.bold,
                       fontSize: 18,
                     ),
@@ -51,10 +51,10 @@ class PancakeTile extends StatelessWidget{
               ],
             ),
             // Donut Pictures
-             const Padding(
-              padding: EdgeInsets.symmetric(
-                horizontal: 36.0,vertical: 16.0
-              ),
+            Padding(
+              padding: const EdgeInsets.symmetric(
+                  horizontal: 36.0, vertical: 16.0),
+              child: Image.asset(imageName),
             ),
 
             //Pancakes flavour
@@ -64,7 +64,7 @@ class PancakeTile extends StatelessWidget{
                 fontSize: 16,
             ),
             ),
-            const SizedBox(height: 4,),
+            const SizedBox(height: 4),
             Text(
               "The Belgian Waffle Co.", style: TextStyle(color: Colors.grey[600]),
             ),
