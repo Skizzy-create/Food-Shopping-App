@@ -1,15 +1,15 @@
-import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:trial/util/pancake_tile.dart';
 
 class PancakeTab extends StatelessWidget {
 
   // List Pancakes On Sale
   List pancakeOnSale = [
     // [pancakeFlavour, pancakePrice, pancakeColour, imageName]
-    ["Classic", "49", Colors.brown, "Assets/images/Regular_pancakes.png"],
-    ["Peach", "59", Colors.brown, "Assets/images/Regular_pancakes.png"],
-    ["Strawberry", "69", Colors.brown, "Assets/images/Regular_pancakes.png"],
-    ["Blueberry", "79", Colors.brown, "Assets/images/Regular_pancakes.png"],
+    ["Classic", "49", Colors.blue, "Assets//images//Pancakes//Regular_pancakes.png"],
+    ["Peach", "59", Colors.red, "Assets//images//Pancakes//Regular_pancakes.png"],
+    ["Strawberry", "69", Colors.pink, "Assets//images//Pancakes//Regular_pancakes.png"],
+    ["Blueberry", "79", Colors.purple, "Assets//images//Pancakes//Blueberry_pancakes.png"],
   ];
 
   @override
@@ -22,7 +22,7 @@ class PancakeTab extends StatelessWidget {
         childAspectRatio: 1/1.5,
       ),
       itemBuilder: (BuildContext context, int index) {
-      return pancakeTile(
+      return PancakeTile(
         pancakeFlavour: pancakeOnSale[index][0],
         panckaePrice: pancakeOnSale[index][1],
         pancakeColour: pancakeOnSale[index][2],

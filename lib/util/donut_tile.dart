@@ -36,7 +36,6 @@ class DonutTile extends StatelessWidget {
                     borderRadius: BorderRadius.only(
                       bottomLeft: Radius.circular(borderRadius),
                       topRight: Radius.circular(borderRadius),
-
                     ),
                   ),
                   padding: const EdgeInsets.all(12),
@@ -45,7 +44,8 @@ class DonutTile extends StatelessWidget {
                     style: TextStyle(
                       color: donutColour[800],
                       fontWeight: FontWeight.bold,
-                      fontSize: 18,),
+                      fontSize: 18,
+                    ),
                   ),
                 ),
               ],

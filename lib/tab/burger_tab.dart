@@ -6,7 +6,7 @@ class BurgerTab extends StatelessWidget {
   // list of burgers
   List burgerOnSale = [
     // [BurgerType, burgerPrice, burgerColour, imageName]
-    ["Cheese Burger", "39", Colors.blue, "Assets/images/Burger/Burger.png"],
+    ["Cheese Burger", "39", Colors.blue, "Assets/images/Burgers/Burger.png"],
     ["Big Mac", "45", Colors.red, "Assets/images/Burgers/Big Mac.png"],
     ["Burger Meal", "67", Colors.purple, "Assets/images/Burgers/Burger Meal.png"],
     ["Family Meal", "99", Colors.brown, "Assets/images/Burgers/burger3combo.png"],
