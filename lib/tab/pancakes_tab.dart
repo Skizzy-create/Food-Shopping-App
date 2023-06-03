@@ -7,8 +7,8 @@ class PancakeTab extends StatelessWidget {
   List pancakeOnSale = [
     // [pancakeFlavour, pancakePrice, pancakeColour, imageName]
     ["Classic", "49", Colors.blue, "Assets/images/Pancakes/Regular_pancakes.png"],
-    ["Peach", "59", Colors.red, "Assets/images/Pancakes/Regular_pancakes.png"],
-    ["Strawberry", "69", Colors.pink, "Assets/images/Pancakes/Regular_pancakes.png"],
+    ["Peach", "59", Colors.red, "Assets/images/Pancakes/Peach_Pankacakes.png"],
+    ["Strawberry", "69", Colors.pink, "Assets/images/Pancakes/strawberry_pankaes.png"],
     ["Blueberry", "79", Colors.purple, "Assets/images/Pancakes/Blueberry_pancakes.png"],
   ];
 
