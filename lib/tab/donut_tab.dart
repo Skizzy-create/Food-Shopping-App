@@ -6,10 +6,10 @@ class DonutTab extends StatelessWidget {
   // list of donuts
   List donutOnSale = [
     // [donutFlavour, donutPrice, donutColour, imageName]
-    ["Ice Cream", "36", Colors.blue, "Assets/images/icecream_donut.png"],
-    ["Strawberry", "45", Colors.red, "Assets/images/strawberry_donut.png"],
-    ["Grape Ape", "84", Colors.purple, "Assets/images/grape_donut.png"],
-    ["Chocolate", "95", Colors.brown, "Assets/images/chocolate_donut.png"]
+    ["Ice Cream", "36", Colors.blue, "Assets/images/Donuts/icecream_donut.png"],
+    ["Strawberry", "45", Colors.red, "Assets/images/Donuts/strawberry_donut.png"],
+    ["Grape Ape", "84", Colors.purple, "Assets/images/Donuts/grape_donut.png"],
+    ["Chocolate", "95", Colors.brown, "Assets/images/Donuts/chocolate_donut.png"]
   ];
 
   @override
