@@ -1,0 +1,11 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+
+# Ignore C++ file extensions in language statistics
+*.cpp linguist-vendored
+*.cc linguist-vendored
+*.h linguist-vendored
+
+# Ignore CMake files in language statistics
+CMakeLists.txt linguist-vendored
+*.cmake linguist-vendored
